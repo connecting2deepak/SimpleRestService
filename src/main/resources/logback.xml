@@ -7,9 +7,9 @@
     </appender>
 
     <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>/applogs/microservice-logs/simplerestservice.log</file>
+        <file>/data01/microservice-logs/simplerestservice.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/applogs/microservice-logs/simplerestservice.log.%d{yyyy-MM-dd}%i</fileNamePattern>
+            <fileNamePattern>/data01/microservice-logs/simplerestservice.log.%d{yyyy-MM-dd}%i</fileNamePattern>
             <maxHistory>10</maxHistory>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>6MB</maxFileSize>
